@@ -1,0 +1,116 @@
+format = """
+[ ](fg:#000000 bg:#ccffee)\
+$username\
+[](bg:#ccffee fg:#000000)\
+[](fg:#ccffee bg:#00cc77)\
+$directory\
+[](fg:#00cc77 bg:#ccffee)\
+[](fg:#ccffee bg:#00ff99)\
+$git_branch\
+$git_status\
+[](fg:#00ff99 bg:#ccffee)\
+[](fg:#ccffee bg:#383838)\
+$golang\
+$gradle\
+$java\
+$nodejs\
+$rust\
+$python\
+[](fg:#383838 bg:#ccffee)\
+[](fg:#ccffee bg:#00cc77)\
+$time\
+[](fg:#00cc77 bg:#ccffee)\
+[](fg:#ccffee)
+$character\
+"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# Username module with Hakker theme colors
+[username]
+show_always = true
+style_user = "bg:#000000 fg:#00ff99"
+style_root = "bg:#000000 fg:#ccffee"
+format = '[$user ]($style)'
+disabled = false
+
+# Directory module with Hakker theme
+[directory]
+style = "bg:#00cc77 fg:#000000"
+format = "[ $path ]($style)"
+#truncation_length = 3
+#runcation_symbol = "…/"
+
+# Path substitutions for cleaner display
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Desktop" = "󰀾 "
+"Videos" = "󰕧 "
+"Public" = "󰐕 "
+"Templates" = "󰏗 "
+
+# Docker context with Hakker theme
+[docker_context]
+symbol = "󰡨 "
+style = "bg:#ccffee fg:#000000"
+format = '[ $symbol $context ]($style)'
+
+# Git branch with Hakker theme
+[git_branch]
+symbol = "󰘬"
+style = "bg:#00ff99 fg:#000000"
+format = '[ $symbol $branch ]($style)'
+
+# Git status with Hakker theme
+[git_status]
+style = "bg:#00ff99 fg:#000000"
+format = '[$all_status$ahead_behind ]($style)'
+
+# Programming language modules with Hakker theme
+[golang]
+symbol = "󰟓 "
+style = "bg:#383838 fg:#00ff99"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:#383838 fg:#00ff99"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = "󰸭 "
+style = "bg:#383838 fg:#00ff99"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = "󰌞󰛦"
+style = "bg:#383838 fg:#00ff99"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = "󱘗"
+style = "bg:#383838 fg:#00ff99"
+format = '[ $symbol ($version) ]($style)'
+
+[python]
+version_format = "${raw}"
+symbol = " 🐍 "
+style = "bg:#383838 fg:#00ff99"
+format = '[${symbol}${version} 󰌠($virtualenv)󰌠 ]($style)'
+
+
+# Time module with Hakker theme
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:#00cc77 fg:#000000"
+format = '[ 󰅐 $time ]($style)'
+
+# Character module for the prompt symbol
+[character]
+success_symbol = '[➜](fg:#00ff99)'
+error_symbol = '[✗](fg:#ccffee)'
+vicmd_symbol = '[❮](fg:#00cc77)'

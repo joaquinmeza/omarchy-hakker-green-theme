@@ -1,0 +1,106 @@
+# Hakker Theme - Green Palette
+
+[colors]
+[colors.primary]
+background = '#000000'
+foreground = '#ccffee'
+
+# Normal colors
+[colors.normal]
+black = '#000000'
+red = '#cccc66'
+green = '#00ff99'
+yellow = '#dddd88'
+blue = '#00cc77'
+magenta = '#66ff66'
+cyan = '#00ffcc'
+white = '#aaffcc'
+
+# Bright colors
+[colors.bright]
+black = '#333333'
+red = '#eeeeaa'
+green = '#00ff99'
+yellow = '#ffffdd'
+blue = '#33ff99'
+magenta = '#99ff99'
+cyan = '#00ffcc'
+white = '#ccffee'
+
+[colors.selection]
+background = '#ccffee'
+text = '#000000'
+
+# Cursor colors
+[colors.cursor]
+text = '#000000'
+cursor = '#ccffee'
+
+# Additional colors for extended palette
+[[colors.indexed_colors]]
+index = 16
+color = '#000000'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#0a0a0a'
+
+[[colors.indexed_colors]]
+index = 18
+color = '#111111'
+
+[[colors.indexed_colors]]
+index = 19
+color = '#1a1a1a'
+
+[[colors.indexed_colors]]
+index = 20
+color = '#222222'
+
+[[colors.indexed_colors]]
+index = 21
+color = '#2a2a2a'
+
+[[colors.indexed_colors]]
+index = 22
+color = '#333333'
+
+[[colors.indexed_colors]]
+index = 23
+color = '#3a3a3a'
+
+[[colors.indexed_colors]]
+index = 24
+color = '#444444'
+
+[[colors.indexed_colors]]
+index = 25
+color = '#4a4a4a'
+
+[[colors.indexed_colors]]
+index = 26
+color = '#555555'
+
+[[colors.indexed_colors]]
+index = 27
+color = '#5a5a5a'
+
+[[colors.indexed_colors]]
+index = 28
+color = '#666666'
+
+[[colors.indexed_colors]]
+index = 29
+color = '#6a6a6a'
+
+[[colors.indexed_colors]]
+index = 30
+color = '#777777'
+
+[[colors.indexed_colors]]
+index = 31
+color = '#7a7a7a'
+
+# Window configuration
+[window]
+opacity = 0.95
