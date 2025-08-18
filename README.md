@@ -138,5 +138,5 @@ The images were created in Gemini. The files were modified, with prompt instruct
 I've added both a kitty and starship files to go with these themes.  By default, these 2 do not come with omarchy
 
 ---
-
+!(./screenshot-2025-08-18_12-07-35.png)
 **Enjoy your hakker-green themed desktop!** 
